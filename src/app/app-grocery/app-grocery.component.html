@@ -4,13 +4,13 @@
     <div class="row">
         <div class="col-xs-6 col-md-4">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="enter grocery items" [(ngModel)]="task"/>
+                <input type="text" class="form-control" placeholder="enter grocery items" [(ngModel)]="task" />
                 <div class="input-group-btn">
                     <button class="btn btn-primary" type="button" (click)="onClick()">
-        <span class="glyphicon glyphicon-ok"></span>
-        <span>&#10003;</span>
-          
-        </button>
+                        <span class="glyphicon glyphicon-ok"></span>
+                        <span>&#10003;</span>
+
+                    </button>
                 </div>
             </div>
         </div>
@@ -19,17 +19,11 @@
     <br />
 
     <ul class="list-group">
-        <li *ngFor="let task of tasks" >
+        <li *ngFor="let task of tasks" style="margin-bottom: 10px;">
             <span> {{ task.name }} </span>
             <button class="delete-button" (click)="deleteItem(task.name)">Delete</button>
+
         </li>
     </ul>
 
 </div>
-            
-            
-            
-            
-            
-            
-            

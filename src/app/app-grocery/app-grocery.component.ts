@@ -26,13 +26,10 @@ export class AppGroceryComponent {
     this.tasks.push({ name: this.task, strike: false });
     this.task = '';
   }
-  editForm: FormGroup | undefined;
 
-  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit() {
-    this.editForm = this.formBuilder.group({});
-    this.strikeElement();
+   this.strikeElement();
   }
 
   strikeElement(): void {
