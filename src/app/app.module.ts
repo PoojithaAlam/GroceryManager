@@ -1,16 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { AppGroceryComponent } from './app-grocery/app-grocery.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppGroceryComponent
   ],
   imports: [
-    BrowserModule
+    FormsModule,
+    BrowserModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppGroceryComponent]
 })
 export class AppModule { }

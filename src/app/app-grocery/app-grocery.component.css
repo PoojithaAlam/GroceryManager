@@ -1,0 +1,23 @@
+ul.list-group li.list-group-item {
+  color:#555;
+  text-decoration: line-through;
+}
+
+
+
+.delete-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 3px;
+  width: 60px;
+  cursor: pointer; 
+  outline: none; 
+  position: absolute; 
+  right: 0px;
+}
+
+.delete-button:focus {
+  box-shadow: none; /* Remove focus shadow */
+}
