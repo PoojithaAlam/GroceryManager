@@ -12,6 +12,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class AppGroceryComponent {
   task: string = '';
   tasks: { name: string; strike: boolean }[] = []; // Define tasks as an array of objects with 'name' and 'strike' properties
+  
+  onClick() {
+    this.tasks.push({ name: this.task, strike: false });
+    this.task = '';
+  }
 
   deleteItem(task: string): void {
     const index = this.tasks.findIndex(
@@ -20,11 +25,6 @@ export class AppGroceryComponent {
     if (index !== -1) {
       this.tasks.splice(index, 1);
     }
-  }
-
-  onClick() {
-    this.tasks.push({ name: this.task, strike: false });
-    this.task = '';
   }
 
 
