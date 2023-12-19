@@ -1,7 +1,7 @@
 # GroceryManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
-# Demonstration Link
+# Demonstration Video Link
 
 https://youtu.be/CGCek68rhHU
 
